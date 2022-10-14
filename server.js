@@ -12,6 +12,9 @@ mongoose.connect(db,{useNewUrlParser: true, useUnifiedTopology:true})
         .catch((err) => console.log(err))
 
 app.use("/",require("./router/User"));
+app.use("/Userprofile",require("./router/Userprofile"));
+app.use("/cart",require("./router/cart.js"));
+app.use("/Item",require("./router/Item.js"));
 
 /*
 const User = require("./model/User");

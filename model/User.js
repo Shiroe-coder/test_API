@@ -5,20 +5,17 @@ const bcrypt = require("bcrypt");
 const UserSchema = new mongoose.Schema({
     user: {
         type: String,
-        require: true,
-        min: 6,
+        ref: "Userprofile"
     },
     pass:{
         type:String,
         require: true,
         min:6,
-    },
-    role: {
-        type:String,
-        enum: ["user","admin"],
-        require:true,
-    },
+    }
 });
+
+
+
 /*
 UserSchema.pre("save",function(next){
     if(!this.isModified("pass")) return next();
