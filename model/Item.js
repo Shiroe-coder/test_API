@@ -17,8 +17,8 @@ const ItemSchema = new mongoose.Schema({
         type: Number
     },
     createdAt: {
-        type: Number,
-        default: () => Date.now(),
+        type: Date,
+        default: Date.now(),
     },
 });
 module.exports = mongoose.model("Item",ItemSchema);

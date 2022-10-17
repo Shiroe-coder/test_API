@@ -8,4 +8,12 @@
     "city":"can tho",
     "address":"123 duong 3/2, an khanh, ninh kieu",
     "email":"abc@gmail.com"
+},
+{
+    "name_item": "iphone",
+    "note_item": "dien thoai dac biet",
+    "image_item": "" ,
+    "price": 13 ,
+    "amout_item": 30
 }
+

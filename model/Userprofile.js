@@ -4,6 +4,7 @@ const UserprofilSchema = new mongoose.Schema({
     user: {
         type: String,
         require: true,
+        unique: true,
         min: 6,
     },
     pass:{
@@ -26,8 +27,8 @@ const UserprofilSchema = new mongoose.Schema({
         default: "customer",
     },
     createdAt: {
-        type: Number,
-        default: () => Date.now(),
+        type: Date,
+        default:  Date.now(),
     },
 });
 module.exports = mongoose.model("Userprofile", UserprofilSchema);

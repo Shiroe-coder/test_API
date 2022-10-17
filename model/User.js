@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const UserSchema = new mongoose.Schema({
     user: {
         type: String,
+        unique: true,
         ref: "Userprofile"
     },
     pass:{
